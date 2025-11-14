@@ -11,41 +11,15 @@ Você também aprenderá a integrar APIs externas, como **Google Drive**, **Lang
 
 O fluxo geral do projeto pode ser visualizado assim:
 
-+-------------------+
-| Cadastro de Vaga |
-+--------+----------+
-|
-v
-+-------------------+
-| Upload de Currículos
-| (em lote via Drive)
-+--------+----------+
-|
-v
-+-------------------+
-| Processamento de |
-| Currículos (IA) |
-| LangChain + Groq |
-+--------+----------+
-|
-v
-+-------------------+
-| Análise Detalhada |
-| e Pontuação |
-+--------+----------+
-|
-v
-+-------------------+
-| Comparação Lado a |
-| Lado dos Currículos|
-+--------+----------+
-|
-v
-+-------------------+
-| Análise Crítica e |
-| Descritiva |
-+-------------------+
 
+```mermaid
+flowchart TD
+    A[Cadastro de Vaga] --> B[Upload de Currículos<br>(em lote via Drive)]
+    B --> C[Processamento de Currículos (IA)<br>LangChain + Groq]
+    C --> D[Análise Detalhada e Pontuação]
+    D --> E[Comparação Lado a Lado dos Currículos]
+    E --> F[Análise Crítica e Descritiva]
+```
 ---
 
 ## Funcionalidades
