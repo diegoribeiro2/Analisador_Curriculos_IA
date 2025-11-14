@@ -1,27 +1,47 @@
-# Analisador de Currículos
+# Analisador de Currículos com IA
 
-Este é um projeto de análise de currículos que utiliza a API do ChatGPT para resumir e pontuar currículos com base na descrição de uma vaga específica. O projeto é desenvolvido em Python, com o Streamlit como front-end para a interface do usuário.
+Bem-vindo ao projeto **“Analisador de Currículos”**.
+Este projeto permite analisar currículos de forma automatizada utilizando **Python**, **Streamlit** e **modelos de IA**, fornecendo resumos, pontuações e análises críticas para cada candidato com base em uma vaga específica.
+
+Você também aprenderá a integrar APIs externas, como **Google Drive**, **LangChain** e **Groq API**, para processar e analisar currículos em larga escala.
+
+---
 
 ## Funcionalidades
 
-- **Upload de Currículos em Lote**: Carregue vários currículos de uma vez para análise.
-- **Análise de Currículos**: Avalie currículos com base em diferentes seções, atribuindo uma pontuação conforme a relevância para a vaga.
-- **Comparação de Currículos**: Compare currículos lado a lado para uma avaliação mais detalhada.
-- **Análise Crítica Descritiva**: Geração de uma análise crítica e descritiva sobre o currículo em relação à vaga.
+- **Upload de Currículos em Lote**  
+  Carregue e processe múltiplos currículos de uma vez, agilizando a análise em larga escala.  
+
+- **Análise Detalhada de Currículos**  
+  Avalie diferentes seções dos currículos (experiência, habilidades, educação, idiomas, pontos fortes e fracos), atribuindo pontuações de acordo com a relevância de cada candidato para a vaga.  
+
+- **Comparação Lado a Lado**  
+  Compare currículos simultaneamente, facilitando a identificação dos candidatos mais adequados.  
+
+- **Geração de Análises Críticas**  
+  Automatize a criação de análises críticas e descritivas que destacam os pontos fortes e fracos de cada candidato em relação à vaga.  
+
+---
 
 ## Tecnologias Utilizadas
 
-- **Python**: Linguagem de programação principal utilizada no projeto.
-- **Streamlit**: Framework para criar a interface web de maneira rápida e interativa.
-- **ChatGPT (modelo 4o-mini)**: LLM utilizado para resumir os currículos e gerar a pontuação.
-- **TinyDB**: Banco de dados NoSQL utilizado para armazenar informações.
-- **Poetry**: Ferramenta de gerenciamento de dependências e ambientes virtuais em Python.
+- **Python 3.11+**: Linguagem principal do projeto.  
+- **Streamlit**: Framework para criar a interface web de forma rápida e interativa.  
+- **ChatGPT (modelo 5-mini)**: Modelo de linguagem para resumir currículos e gerar pontuações.  
+- **LangChain + Groq API**: Para processar, resumir e pontuar currículos de forma eficiente.  
+- **Google Drive API**: Para ler e importar currículos diretamente do Drive.  
+- **TinyDB**: Banco de dados NoSQL utilizado para armazenar informações.  
+- **UV**: Gerenciamento de dependências e ambientes virtuais.  
+
+---
 
 ## Pré-requisitos
 
-- Python 3.10 ou superior
-- Poetry instalado globalmente
-- Chave da API da OpenAI
+- Python 3.11 ou superior  
+- UV instalado globalmente  
+- Chave da API da OpenAI  
+
+---
 
 ## Configuração do Ambiente
 
@@ -63,7 +83,7 @@ O script inicia o Streamlit no endereço `0.0.0.0` e na porta `8585`.
 Para usuários Windows, a execução deve ser feita manualmente. Utilize o seguinte comando para iniciar o projeto:
 
 ```bash
-poetry run streamlit run analyser/app.py
+uv run streamlit run analyser/app.py
 ```
 
 Depois, acesse o projeto através do seu navegador no endereço:
