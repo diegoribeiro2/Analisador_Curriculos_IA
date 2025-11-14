@@ -21,8 +21,8 @@ flowchart TD
 
     %% Nodes
     A[📄 Cadastro de Vaga]:::input
-    B[📁 Upload de Currículos<br>(em lote via Drive)]:::input
-    C[🤖 Processamento de Currículos<br>(IA + LangChain + Groq)]:::etapa
+    B[📁 Upload de Currículos\n(em lote via Drive)]:::input
+    C[🤖 Processamento de Currículos\n(IA + LangChain + Groq)]:::etapa
     D[📊 Análise Detalhada e Pontuação]:::etapa
     E[🔍 Comparação Lado a Lado dos Currículos]:::etapa
     F[📝 Análise Crítica e Descritiva]:::output
