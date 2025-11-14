@@ -1,5 +1,7 @@
 # Analisador de Currículos com IA
 
+🔗 **Acesse o aplicativo aqui:** [iarecrutadora.streamlit.app](https://iarecrutadora.streamlit.app/)
+
 Bem-vindo ao projeto **“Analisador de Currículos”**.
 Este projeto permite analisar currículos de forma automatizada utilizando **Python**, **Streamlit** e **modelos de IA**, fornecendo resumos, pontuações e análises críticas para cada candidato com base em uma vaga específica.
 
