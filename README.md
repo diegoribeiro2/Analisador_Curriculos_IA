@@ -7,6 +7,10 @@ Este projeto permite analisar currículos de forma automatizada utilizando **Pyt
 
 Você também aprenderá a integrar APIs externas, como **Google Drive**, **LangChain** e **Groq API**, para processar e analisar currículos em larga escala.
 
+![Avaliador de CV](./Avaliador de CV.png)
+
+![Analisador de CV](./analisador de CV02.png)
+
 ---
 
 ## Fluxo do Sistema
