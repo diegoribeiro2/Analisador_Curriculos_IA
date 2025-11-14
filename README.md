@@ -14,11 +14,25 @@ O fluxo geral do projeto pode ser visualizado assim:
 
 ```mermaid
 flowchart TD
-    A[Cadastro de Vaga] --> B[Upload de Currículos<br>(em lote via Drive)]
-    B --> C[Processamento de Currículos (IA)<br>LangChain + Groq]
-    C --> D[Análise Detalhada e Pontuação]
-    D --> E[Comparação Lado a Lado dos Currículos]
-    E --> F[Análise Crítica e Descritiva]
+    %% Definição de cores
+    classDef etapa fill:#f9f,stroke:#333,stroke-width:2px,color:#000;
+    classDef input fill:#9f9,stroke:#333,stroke-width:2px,color:#000;
+    classDef output fill:#ff9,stroke:#333,stroke-width:2px,color:#000;
+
+    %% Nodes
+    A[📄 Cadastro de Vaga]:::input
+    B[📁 Upload de Currículos<br>(em lote via Drive)]:::input
+    C[🤖 Processamento de Currículos<br>(IA + LangChain + Groq)]:::etapa
+    D[📊 Análise Detalhada e Pontuação]:::etapa
+    E[🔍 Comparação Lado a Lado dos Currículos]:::etapa
+    F[📝 Análise Crítica e Descritiva]:::output
+
+    %% Fluxo
+    A --> B
+    B --> C
+    C --> D
+    D --> E
+    E --> F
 ```
 ---
 
