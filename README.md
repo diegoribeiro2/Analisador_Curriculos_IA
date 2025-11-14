@@ -7,6 +7,47 @@ Você também aprenderá a integrar APIs externas, como **Google Drive**, **Lang
 
 ---
 
+## Fluxo do Sistema
+
+O fluxo geral do projeto pode ser visualizado assim:
+
++-------------------+
+| Cadastro de Vaga |
++--------+----------+
+|
+v
++-------------------+
+| Upload de Currículos
+| (em lote via Drive)
++--------+----------+
+|
+v
++-------------------+
+| Processamento de |
+| Currículos (IA) |
+| LangChain + Groq |
++--------+----------+
+|
+v
++-------------------+
+| Análise Detalhada |
+| e Pontuação |
++--------+----------+
+|
+v
++-------------------+
+| Comparação Lado a |
+| Lado dos Currículos|
++--------+----------+
+|
+v
++-------------------+
+| Análise Crítica e |
+| Descritiva |
++-------------------+
+
+---
+
 ## Funcionalidades
 
 - **Upload de Currículos em Lote**  
